@@ -4,8 +4,7 @@ import java.util.List;
 
 import cloud.simple.service.model.User;
 
-
 public interface UserDao {
 
-	List<User> findAll();
+    List<User> findAll();
 }
