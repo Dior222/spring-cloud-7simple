@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cloud</groupId>
-    <artifactId>cloud-simple-service</artifactId>
+    <artifactId>cloud-simple-service-replicas</artifactId>
     <version>1.0.0</version>
-    <name>cloud-simple-service</name>
+    <name>cloud-simple-service-replicas</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

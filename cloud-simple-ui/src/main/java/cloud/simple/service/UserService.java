@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+//import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import cloud.simple.model.User;
-import cloud.simple.service.UserServiceProvider.FeignUserService;
+//import cloud.simple.service.UserServiceProvider.FeignUserService;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
@@ -17,8 +17,8 @@ public class UserService {
     @Autowired
     RestTemplate restTemplate;
 
-    @Autowired
-    FeignUserService feignUserService;
+    //@Autowired
+    //FeignUserService feignUserService;
 
     final String SERVICE_NAME = "cloud-simple-service";
 
