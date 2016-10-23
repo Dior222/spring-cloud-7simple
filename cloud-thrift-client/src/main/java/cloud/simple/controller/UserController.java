@@ -10,16 +10,15 @@ import cloud.simple.provider.UserServiceProvider;
 
 @Controller
 public class UserController {
-	
-	
-	@Autowired
-	UserServiceProvider userServiceProvider;
-	
-	@ResponseBody
-	@RequestMapping(value = "/hello")
-	String hello() throws TException {
-		UserService.Client svr=userServiceProvider.getBalanceUserService();
-		UserDto userDto= svr.getUser();
-		return "hi "+userDto.getUsername();
-	}
+
+    @Autowired
+    UserServiceProvider userServiceProvider;
+
+    @ResponseBody
+    @RequestMapping(value = "/hello")
+    String hello() throws TException {
+        UserService.Client svr = userServiceProvider.getBalanceUserService();
+        UserDto userDto = svr.getUser();
+        return "hi " + userDto.getUsername();
+    }
 }
